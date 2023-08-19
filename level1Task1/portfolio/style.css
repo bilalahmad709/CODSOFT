@@ -140,18 +140,26 @@ header img {
 #download {
     text-align: center;
     padding: 20px;
+    color: blue;
+}
+#download a{
+    color: #dfdee7;
+    font-weight: bolder;
+    background-color: rgb(9, 5, 39);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /* Style the footer */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: rgb(88, 94, 95);
     color: white;
 }
 
 footer img {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     margin-left: 10px;
 }
