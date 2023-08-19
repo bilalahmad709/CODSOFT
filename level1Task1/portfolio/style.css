@@ -1,94 +1,157 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
-    color: black;
-}
-body{
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: white;
+}
+
+.about-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-}
-.main{
-    display: flex;
-}
-.header_section{
-    width: 30vw;
-    background-color: rgb(218, 211, 211);
+    padding: 40px;
+    background-color:white;
+    
+  }
+
+  .card {
+   
+    background-color:rgb(233, 233, 233);
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    color: black;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 5px 5px 10px rgb(115, 115, 151);
+    margin: 12px;
+    
+    
+   
+  }
+  .card img{
+    height: 50px;
+    width: 50px;
+  }
+
+  .card h2,span {
+    margin-top: 0;
+    color: rgb(21, 9, 94);
+  }
+
+  .card p {
+    margin: 10px 0;
+    color: black;
+    text-align: justify;
+  }
+  .card ul {
+    list-style-type: none;
+  }
+  .card ul li{
+    color: black;
+    
+  }
+/* Style the header */
+header {
+   
+    text-align: center;
+    padding: 20px;
+    background-color: #15138d;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Style the about section */
+#about {
+    padding: 20px;
+}
+#about h2  {
+    
+    text-align: center;
+   
+}
+
+/* Style the projects section */
+#projects {
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
     
 }
-.header_section div img{
-    margin-top: 10px;
-    /* align-items: center; */
-    min-width: 30px;
-    min-height: 30px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-.header_section h2{
-    
-    color: #fff;
-    background-color: rgb(17, 14, 14);
-    border-radius: 20px;
-}
-.header_section .expertise{
-    /* text-align: start; */
-}
 
-.about_contact{
-    float: left;
-}
-.header_section .contact{
-    
-    display: flex;
-}
-.header_section .contact .icon{
-    height: 5px;
-    width: 5px;
-}
-.main_section{
+.project {
+    color: black;
+    text-align: center;
     padding: 10px;
-    width: 70vw;
-    background-color:rgb(230, 217, 217);
+    border-radius: 10px;
+    background-color: rgb(218, 213, 213);
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgb(115, 115, 151);
 }
-.main_section h1{
-   
+.project h2,p{
+    color: black;
+}
+.project button a{
+    color: black;
+    background-color: green;
+    padding: 6px;
     font-weight: bolder;
-    font-size: 80px;
-}
-.main_section h3{
-    color: rgb(19, 19, 95);
-    font-weight: bolder;
-   
-}
-.main_section h5{
-    color: rgb(2, 2, 119);
+    border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-    .main {
-      flex-direction: column;
-    }
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+ h2{
+    text-align: center;
+}
 
-    .header_section, .main_section {
-      flex: 100%;
-      border-radius: 10px;
-      margin: 10px 0;
-    }
 
-    .profile_picture {
-      width: 150px;
-      height: 150px;
-      margin-bottom: 10px;
-    }
-  }
+/* Style the contact section */
+#contact {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #0f0752;
+}
+#contact img{
+    height: 30px;
+    width: 30px;
+}
+
+.contact-item {
+    text-align: center;
+}
+.contact-item p{
+    color: white;
+}
+
+/* Style the download section */
+#download {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
