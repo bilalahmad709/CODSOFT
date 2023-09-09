@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, rgb(25, 25, 126),rgb(14, 14, 68));
+    background: linear-gradient(135deg, rgb(25, 25, 126),rgb(14, 14, 68), rgb(128, 128, 40));
     padding: 10px;
 }
 .todo_list{
@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(228, 203, 203);
+    background-color: rgb(241, 221, 221);
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
@@ -54,7 +54,7 @@
     border: none;
     outline: none;
     padding: 15px 30px;
-    background-color: orange;
+    background-color: rgb(21, 143, 21);
     border-radius: 25px;
     font-weight: bolder;
     font-size: 20px;
@@ -85,4 +85,29 @@ ul li::before{
     top: 16px;
     left: -10px;
    
+}
+ul li.checked{
+    color: grey;
+    text-decoration: line-through;
+}
+ul li.checked::before{ 
+    background-image: url('assets/checked.png');
+    width: 20px;
+    height: 20px;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: brown;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background: gainsboro;
+    border-radius: 50px;
 }
